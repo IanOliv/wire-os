@@ -143,7 +143,7 @@ Atenção ao fuso: o padrão é `America/Chicago` quando `/data/etc/localtime` n
 |---|---|---|---|
 | Kernel | boot | governor padrão `performance` | `defconfig:588` |
 | `init_post_boot` | boot | `interactive`, `scaling_min_freq=400000`, parâmetros do interactive | `system/core/rootdir/etc/init.qcom.post_boot.sh:590-612` |
-| `wired` | boot + 3 s, e a cada mudança na UI web (porta 8080) | preset 0: máx 533 MHz; **preset 1 (padrão)**: máx 729,6 MHz, `interactive`; **preset 2**: máx 1267,2 MHz, **`performance`** | `anki/wired/mods/freq.go:30-43,84-98,101,108` |
+| `wired` | boot + 3 s, e a cada mudança na UI web (porta 8080) | **preset 0 (padrão, `FreqPreset = 0`)**: máx 533 MHz; preset 1: máx 729,6 MHz, `interactive`; **preset 2**: máx 1267,2 MHz, **`performance`** | `anki/wired/mods/freq.go:13-14,30-43,84-98,101,108` |
 | `vic-engine` | início e trocas de modo | normal: `interactive`; economia: `userspace` a 200 ou 400 MHz | `osState_vicos.cpp:125-126,314-353`; `powerStateManager.cpp:52-54` |
 
 **HIPÓTESE.** A temperatura aparece quando o preset 2 do `wired` está ativo, ou quando há carga contínua, porque não existe throttling abaixo dos 90 °C. Verificar o preset: `cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_{governor,max_freq}`.

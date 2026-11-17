@@ -1,22 +1,22 @@
 [submodule "anki/victor"]
 	path = anki/victor
-	url = https://github.com/os-vector/wire-os-victor
+	url = https://github.com/IanOliv/wire-os-victor
 [submodule "poky/meta-openembedded"]
 	path = poky/meta-openembedded
-	url = https://github.com/openembedded/meta-openembedded
+	url = https://github.com/IanOliv/meta-openembedded
 	branch = whinlatter
 [submodule "anki/wired"]
 	path = anki/wired
-	url = https://github.com/os-vector/wired
+	url = https://github.com/IanOliv/wired
 [submodule "anki/vic-cloudless"]
 	path = anki/vic-cloudless
-	url = https://github.com/kercre123/vic-cloudless
+	url = https://github.com/IanOliv/vic-cloudless
 [submodule "poky/bitbake"]
 	path = poky/bitbake
-	url = https://github.com/openembedded/bitbake.git
+	url = https://github.com/IanOliv/bitbake.git
 [submodule "poky/openembedded-core"]
 	path = poky/openembedded-core
-	url = https://github.com/openembedded/openembedded-core.git
+	url = https://github.com/IanOliv/openembedded-core.git
 [submodule "external/purplpkg"]
 	path = external/purplpkg
-	url = https://github.com/purpl-org/purplpkg
+	url = https://github.com/IanOliv/purplpkg
